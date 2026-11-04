@@ -1,0 +1,38 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# ── Virtual environments ─────────────────────────────────
+.venv/
+venv/
+
+# ── Secrets (NEVER commit) ───────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Databases and backups (contain patient records) ──────
+*.db
+*.db.bak*
+*.sqlite
+*.sqlite3
+
+# ── Local runtime data (drafts / unsent calls) ───────────
+ai_engine/data/*.json
+ai_engine/data/drafts/
+ai_engine/data/pending_calls/
+
+# ── Audio (generated replies and real voice recordings) ──
+voice_assistant/audio/*.mp3
+voice_assistant/audio/*.m4a
+voice_assistant/audio/*.wav
+
+# ── Editor / OS / shortcuts ──────────────────────────────
+.vscode/
+.idea/
+*.lnk
+Thumbs.db
+.DS_Store
+desktop.ini

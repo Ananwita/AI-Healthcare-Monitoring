@@ -1,0 +1,8 @@
+# Speech-to-text (also installs torch)
+openai-whisper>=20240930
+
+# Text-to-speech
+gTTS>=2.5
+
+# Voice app UI (st.audio_input needs >= 1.39)
+streamlit>=1.39
